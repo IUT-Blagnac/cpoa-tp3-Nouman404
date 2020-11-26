@@ -4,36 +4,42 @@ class PizzaTestDrive [[java:PizzaTestDrive]] {
 }
 class PizzaPoivronsStyleBrest [[java:pizza.PizzaPoivronsStyleBrest]] {
 	+PizzaPoivronsStyleBrest()
+	+void preparer()
 }
 class PizzaPoivrons [[java:pizza.PizzaPoivrons]] {
 }
 PizzaPoivrons <|-- PizzaPoivronsStyleBrest
 class PizzaGrecqueStyleBrest [[java:pizza.PizzaGrecqueStyleBrest]] {
 	+PizzaGrecqueStyleBrest()
+	+void preparer()
 }
 class PizzaGrecque [[java:pizza.PizzaGrecque]] {
 }
 PizzaGrecque <|-- PizzaGrecqueStyleBrest
 class PizzaFromageStyleStrasbourg [[java:pizza.PizzaFromageStyleStrasbourg]] {
 	+PizzaFromageStyleStrasbourg()
+	+void preparer()
 }
 class PizzaFromage [[java:pizza.PizzaFromage]] {
 }
 PizzaFromage <|-- PizzaFromageStyleStrasbourg
 class PizzaGrecqueStyleStrasbourg [[java:pizza.PizzaGrecqueStyleStrasbourg]] {
 	+PizzaGrecqueStyleStrasbourg()
+	+void preparer()
 }
 class PizzaGrecque [[java:pizza.PizzaGrecque]] {
 }
 PizzaGrecque <|-- PizzaGrecqueStyleStrasbourg
 class PizzaPoivronsStyleStrasbourg [[java:pizza.PizzaPoivronsStyleStrasbourg]] {
 	+PizzaPoivronsStyleStrasbourg()
+	+void preparer()
 }
 class PizzaPoivrons [[java:pizza.PizzaPoivrons]] {
 }
 PizzaPoivrons <|-- PizzaPoivronsStyleStrasbourg
 class PizzaFromageStyleBrest [[java:pizza.PizzaFromageStyleBrest]] {
 	+PizzaFromageStyleBrest()
+	+void preparer()
 }
 class PizzaFromage [[java:pizza.PizzaFromage]] {
 }
