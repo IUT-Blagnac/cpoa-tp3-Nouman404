@@ -51,9 +51,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
+                <finalName>pizzeria</finalName>      
                     <archive>
                         <manifest>
                             <mainClass>PizzaTestDrive</mainClass>
+                              
                         </manifest>
                     </archive>
                 </configuration>
@@ -69,28 +71,28 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <id>fix0</id>
-                        <phase>install</phase>
-                        <goals>
-                        <goal>exec</goal>
-                        </goals>
-                        <configuration>
-                        <executable>ruby</executable>
-                        <workingDirectory>tests</workingDirectory>
-                        <arguments>
-                            <argument>testfix0.rb</argument>
-                            <argument>../README.adoc</argument>
-                        </arguments>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+<!--             <plugin> -->
+<!--                 <groupId>org.codehaus.mojo</groupId> -->
+<!--                 <artifactId>exec-maven-plugin</artifactId> -->
+<!--                 <version>3.0.0</version> -->
+<!--                 <executions> -->
+<!--                     <execution> -->
+<!--                         <id>fix0</id> -->
+<!--                         <phase>install</phase> -->
+<!--                         <goals> -->
+<!--                         <goal>exec</goal> -->
+<!--                         </goals> -->
+<!--                         <configuration> -->
+<!--                         <executable>ruby</executable> -->
+<!--                         <workingDirectory>tests</workingDirectory> -->
+<!--                         <arguments> -->
+<!--                             <argument>testfix0.rb</argument> -->
+<!--                             <argument>../README.adoc</argument> -->
+<!--                         </arguments> -->
+<!--                         </configuration> -->
+<!--                     </execution> -->
+<!--                 </executions> -->
+<!--             </plugin> -->
             <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
