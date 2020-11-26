@@ -19,7 +19,7 @@ public abstract class Pizza {
 	}
 
 	public void emballer() {
-		System.out.println("Emballage dans une boîte carré");
+		System.out.println("Emballage dans une boite carré");
 	}
 
 	public String getNom() {
