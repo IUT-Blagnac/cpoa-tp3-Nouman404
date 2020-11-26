@@ -6,10 +6,20 @@ import pizza.PizzaGrecqueStyleBrest;
 import pizza.PizzaPoivronsStyleBrest;
 
 public class PizzeriaBrest extends Pizzeria {
+	private static PizzeriaBrest pizzeriaB= new PizzeriaBrest();
+	
+	private PizzeriaBrest() {
+		
+	}
+	
+	public static PizzeriaBrest instanciate() {
+		return pizzeriaB;
+	}
+	
 	
 	protected Pizza creerPizza(String type) {
 		switch (type) {
-		case "cheese":
+		case "cheese": 	
 			return new PizzaFromageStyleBrest();
 		case "greek":
 			return new PizzaGrecqueStyleBrest();
