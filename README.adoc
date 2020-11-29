@@ -87,9 +87,9 @@ endif::[]
 //------------------------------------ 
 == {assignment}
 
-{lastName}:: BRUEL
+{lastName}:: HAMDI
 
-{firstName}:: Jean-Michel
+{firstName}:: Nouman
 
 {group} #::
 
@@ -230,9 +230,9 @@ TIP: Commencez par le programme fourni et servez-vous des _QuickFix_ pour "gén�
 ====
 
 [%interactive]
-* [ ] un `pom.xml` fonctionnel qui lance les tests maven de votre application
-* [ ] un `build.gradle` fonctionnel qui lance les tests gradle de votre application
-* [ ] le diagramme de classe de votre application, dans un fichier `TP3.plantuml`, placé dans le répertoire `doc` de votre dépôt.
+* [X] un `pom.xml` fonctionnel qui lance les tests maven de votre application
+* [X] un `build.gradle` fonctionnel qui lance les tests gradle de votre application
+* [X] le diagramme de classe de votre application, dans un fichier `TP3.plantuml`, placé dans le répertoire `doc` de votre dépôt.
 ====
 
 On utilisera le modèle suivant pour les pizzas :

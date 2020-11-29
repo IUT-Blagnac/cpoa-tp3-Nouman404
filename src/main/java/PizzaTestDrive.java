@@ -5,8 +5,8 @@ import pizza.Pizza;
 
 public class PizzaTestDrive {
   public static void main(String[] args) {
-    Pizzeria boutiqueBrest = new PizzeriaBrest();
-    Pizzeria boutiqueStrasbourg = new PizzeriaStrasbourg();
+    Pizzeria boutiqueBrest = PizzeriaBrest.instanciate();
+    Pizzeria boutiqueStrasbourg = PizzeriaStrasbourg.instanciate();
 
     Pizza pizza = boutiqueBrest.commanderPizza("cheese");
     System.out.println("JMB a commandé une " + pizza.getNom() + "\n");

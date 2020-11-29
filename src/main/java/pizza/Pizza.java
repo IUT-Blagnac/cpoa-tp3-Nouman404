@@ -7,19 +7,19 @@ public abstract class Pizza {
 
 	
 	public void preparer() {
-		System.out.println("preperer");
+		System.out.println("Préparation");
 	}
 
 	public void cuire() {
-		System.out.println("cuire");
+		System.out.println("Cuisson 25 minutes à 180°");
 	}
 
 	public void couper() {
-		System.out.println("couper");
+		System.out.println("Découpage en parts triangulaires");
 	}
 
 	public void emballer() {
-		System.out.println("emballer");
+		System.out.println("Emballage dans une boite carré");
 	}
 
 	public String getNom() {
